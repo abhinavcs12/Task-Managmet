@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <input type="text" class="search" placeholder="Search">
+            <nav class="menu">
+                <button type="button">My day</button>
+                <button type="button">This week</button>
+                <button type="button">This month</button>
+                <button type="button">All tasks</button>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Current Week</h1>
+            </header>
+            <ul class="task-list">
+            </ul>
+            <div class="add-task">
+                <input type="text" placeholder="Add a task">
+                <input type="date">
+                <button class="add-btn">Add Task</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

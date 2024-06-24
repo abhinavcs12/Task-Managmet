@@ -1,0 +1,135 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #1f1f1f; /* Dark background */
+  color: #ddd; /* Light text color */
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background: #333; /* Dark sidebar background */
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items at the start (top) */
+  align-items: center; /* Center content horizontally */
+}
+
+.search {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #555; /* Darker border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #444; /* Darker background */
+  color: #ddd; /* Light text color */
+  width: 100%;
+}
+
+.menu button {
+  display: block;
+  width: 100%;
+  padding: 10px; /* Initial padding */
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #ddd;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Transition all properties for smoother effect */
+  font-family: Arial, sans-serif;
+}
+
+.menu button:hover {
+  background-color: #555;
+  color: white;
+  padding: 10px 20px; /* Increased horizontal padding on hover */
+  width: 120%; /* Increase width on hover */
+}
+
+
+.main-content {
+  flex-grow: 1;
+  /* background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover; */
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px; /* Space between the title and the first task */
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #ddd; /* Light text color */
+}
+
+.task-date {
+  margin-left: auto;
+  margin-right: 20px;
+  width: 20%; /* 50% width for date input */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  padding: 10px;
+  border: 1px solid #555; /* Darker border */
+  border-radius: 5px;
+  background-color: #444; /* Darker background */
+  color: #ddd; /* Light text color */
+}
+
+.add-task input[type="text"] {
+  width: 67%; /* 75% width for task input */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  padding: 10px;
+  border: 1px solid #555; /* Darker border */
+  border-radius: 5px;
+  background-color: #444; /* Darker background */
+  color: #ddd; /* Light text color */
+}
+
+.add-task input[type="date"] {
+  width: 20%; /* 25% width for date input */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  padding: 10px;
+  border: 1px solid #555; /* Darker border */
+  border-radius: 5px;
+  background-color: #444; /* Darker background */
+  color: #ddd; /* Light text color */
+}
+
+.add-btn {
+  padding: 10px;
+  background-color: #555; /* Darker button background */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ddd; /* Light text color */
+  margin-left: 10px; /* Adjust margin between buttons */
+}
+
+.add-btn:hover {
+  background-color: #777; /* Darker hover background */
+}
